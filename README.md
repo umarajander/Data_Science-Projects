@@ -1,1 +1,1 @@
-# Data-Science-Projects
+The data belongs to a telecom client. The variable Churn shows if their customer has left their service or not. If its 1 then they have left, and if its 0 then they have stayed back. Rest of the variables are independent variable. Predicting Churn value of all customers who are likely to leave.
