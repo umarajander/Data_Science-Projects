@@ -18,8 +18,6 @@ str(data)
 
 
 ################################## IV for numeric data  ##############################################################
-################################## IV for numeric data  ##############################################################
-################################## IV for numeric data  ##############################################################
 iv_num <- function(variable, target,data,groups)
 {
   data[,"rank"] <- cut2(data[,variable],g=groups)
@@ -48,8 +46,7 @@ a4<- iv_num("DebtRatio","Churn",data,groups=10)
 
 IV_num<- data.frame(rbind(a1,a2,a3,a4))
 
-################################## IV for categorical data  ##############################################################
-################################## IV for categorical data  ##############################################################
+
 ################################## IV for categorical data  ##############################################################
 
 iv_char <- function(variable, target, data) {
@@ -188,8 +185,4 @@ ks1.logit <- max(attr(m1.perf, "y.values")[[1]] - (attr(m1.perf, "x.values")[[1]
 ks1.logit # Thumb rule : should lie between 40% - 70%
 
 ############################################################################################################
-names(data)[9] <- "pred"
 write.csv(data,"result.csv")
-
-r code_logistic.txt
-Displaying r code_logistic.txt.
